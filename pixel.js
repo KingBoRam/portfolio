@@ -28,8 +28,8 @@
 
   const SECTIONS = [
     ["about", "ABOUT"],
-    ["skill", "SKILLS"],
     ["project", "PROJECTS"],
+    ["skill", "SKILLS"],
     ["experience", "CAREER"],
   ];
 
@@ -253,13 +253,6 @@
         </div>
       </section>
 
-      <section id="skill">
-        ${sectionHead("SKILLS", "skill")}
-        <div class="px box reveal">
-          ${D.skills.map((s) => `<div class="skill-row"><h4>${esc(s.group)}</h4>${chips(s.items)}</div>`).join("")}
-        </div>
-      </section>
-
       <section id="project">
         ${sectionHead("PROJECTS", "project")}
         <div class="quests">
@@ -296,6 +289,13 @@
               </div>
             </a>`;
           }).join("")}
+        </div>
+      </section>
+
+      <section id="skill">
+        ${sectionHead("SKILLS", "skill")}
+        <div class="px box reveal">
+          ${D.skills.map((s) => `<div class="skill-row"><h4>${esc(s.group)}</h4>${chips(s.items)}</div>`).join("")}
         </div>
       </section>
 
