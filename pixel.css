@@ -1888,6 +1888,7 @@ mark.hl {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  image-rendering: auto; /* 로고는 픽셀 처리 없이 부드럽게 */
 }
 .svc-logo.empty {
   font-family: var(--pixel);
